@@ -1,9 +1,10 @@
 var express = require('express');
 
 var app = express();
+app.set('view engine','ejs');//por padrao ele para funcionar é necessario uma pasta com nome views na raiz
 
 app.get('/', function (request, response) {
-   response.send(`<p>Ola mundo usando nodejs e Express</p>`);
+   response.render('site/home');
 });
 
 
