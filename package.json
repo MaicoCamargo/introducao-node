@@ -1,0 +1,27 @@
+{
+  "name": "intro-node",
+  "version": "1.0.0",
+  "description": "primeiro projeto em node, aprendendo a usar a tecnologia ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaicoCamargo/introducao-node.git"
+  },
+  "keywords": [
+    "node+express"
+  ],
+  "author": "Maico Camargo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaicoCamargo/introducao-node/issues"
+  },
+  "homepage": "https://github.com/MaicoCamargo/introducao-node#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  }
+}
