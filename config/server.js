@@ -15,6 +15,7 @@ module.exports = function () {
     rotas(server);
 
     server.listen('8000',function () {
-        console.log('server rodando com express...');
+        console.log('\n   server rodando com express...');
+        console.log('   server rodando com conexão no banco mysql...\n');
     });
 };

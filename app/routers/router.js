@@ -6,7 +6,12 @@ var clienteModel = require('../model/cliente');
 module.exports = function (app) {
 
     app.get('/', function (request, response) {
-        response.render('home',{clientes: clienteModel().all()});
+        /*
+            no metodo all estamos fazendo um callback, mandando uma função por parametro
+         */
+        clienteModel().all(function (erro, resultado) {
+            response.render('home', {clientes: resultado});
+        })
     });
 
     app.get('/contato', function (request, response) {

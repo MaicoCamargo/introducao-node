@@ -1,18 +1,10 @@
-var mysql = require('mysql');
-
-var con = mysql.createConnection({
-    host:'127.0.0.1',
-    user:'admin',
-    password:'admin',
-    database:'node_db'
-});
+var db = require('../../config/db');
 
 module.exports = function () {
 
-    this.all = function () {
-        con.query('select * from cliente',function (erro, resultado) {
-            console.log(resultado);
-        })
+    this.all = function (retorno) {
+
+        return db().query('select * from cliente',retorno);
     };
 
     return this;
