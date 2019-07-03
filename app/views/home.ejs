@@ -6,7 +6,11 @@
 <body>
 
 <h1>Pagina principal</h1>
-
+<ul>
+    <% for (var index in clientes ) { %>
+        <li> <%=  clientes[index].nome%> </li>
+    <% } %>
+</ul>
 
 </body>
 </html>
