@@ -8,10 +8,14 @@
 <h1>Pagina principal</h1>
 <ul>
     <% for (var index in clientes ) { %>
-        <li> <%=  clientes[index].nome%> </li>
+        <li> <%=  clientes[index].nome %> </li>
     <% } %>
 </ul>
 
+<br>
+<% for (var i in erros ) { %>
+    <li> <%=  erros[i].msg %> </li>
+<% } %>
 <br>
 <form action="/" method="post">
     <label>Nome</label>

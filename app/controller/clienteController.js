@@ -11,9 +11,10 @@ module.exports.index = function(request, response){
 /**
  * cadastrar um cliente
  */
-module.exports.insert = function(resquest,response){
+module.exports.insert = function(request,response){
 
-    dados = resquest.body;
+    //pesquisar sobre o express-validator
+    dados = request.body;
 
     clienteModel().save(dados,function () {
         response.redirect('/');
