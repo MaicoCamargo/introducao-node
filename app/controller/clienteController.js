@@ -11,7 +11,13 @@ module.exports.index = function(request, response){
 /**
  * cadastrar um cliente
  */
-module.exports.insert = function(){
+module.exports.insert = function(resquest,response){
+
+    dados = resquest.body;
+
+    clienteModel().save(dados,function () {
+        response.redirect('/');
+    });
 
 };
 
