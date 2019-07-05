@@ -11,4 +11,8 @@ module.exports = function (app) {
     app.get('/detalhes/:id', function (request, response) {
         clienteController.details(request,response);
     });
+
+    app.post('/', function (request, response) {
+        clienteController.insert(request,response);
+    });
 };
